@@ -4,7 +4,7 @@ import pandas as pd
 from matplotlib.ticker import FuncFormatter
 
 # Sample data loading (replace with your actual data)
-df = pd.read_csv('data/finalStreamlitData.csv')
+df = pd.read_csv('data/StreamlitData.csv')
 
 # Streamlit App Title
 st.title("Airbnb Investment Decision Tool")
