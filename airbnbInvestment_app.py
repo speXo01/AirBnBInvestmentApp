@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from matplotlib.ticker import FuncFormatter
 
-# Sample data loading (replace with your actual data)
+# Data loading
 df = pd.read_csv('data/StreamlitData.csv')
 
 # Streamlit App Title
@@ -59,7 +59,7 @@ def currency_formatter(x, pos):
     return "${:,.2f}".format(x)
 
 
-# Calculate and Display Average Profit by Number of Beds using matplotlib
+# Calculate and Display Average Profit by Number of Beds
 avg_profit_by_beds = filtered_df.groupby('beds')['profit_left'].mean().reset_index()
 
 fig, ax = plt.subplots(figsize=(10, 6))
